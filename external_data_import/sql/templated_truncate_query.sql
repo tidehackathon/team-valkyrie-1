@@ -1,1 +1,1 @@
-TRUNCATE {table};
+TRUNCATE {table} CASCADE;
