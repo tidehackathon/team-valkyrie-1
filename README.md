@@ -12,6 +12,7 @@ Valkyrie-1
 The project consists of three separate modules:
 
 ```
+├── airflow_infra
 ├── executive_summary_generator
 ├── executive_summary_generator_api
 ├── external_data_import
@@ -20,10 +21,11 @@ The project consists of three separate modules:
 
 Of which the following perform the corresponding functions:
 
++ **airflow_infra** - contains docker-compose for Airflow infrastructure deployment and DAGs that are going to be used in data pipelines; 
 + **executive_summary_generator** - a module with the script that uses executive summary templates and OpenAI API that helps create a short executive summary;
 + **executive_summary_generator_api** - a module that uses FastAPI framework and has an POST endpoint. The idea is to have API endpoint that takes some input text data, prepares executive summary templates and calls OpenAI API. As result it returns a short executive summary;
 + **external_data_import** - data injection module;
-+ **metabase** - ....
++ **metabase** - contains a list of files with Metabase queries that are going to be used as datasets for Metabase dashboards.
 
 ## executive_summary_generator module
 
