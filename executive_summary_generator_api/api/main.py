@@ -1,20 +1,23 @@
 import logging
 
 import openai
-from fastapi import FastAPI, Body
+from fastapi import FastAPI
 
 from .constants import EXECUTIVE_SUMMARY_TEMPLATE
+from .models import TextInput
 
 app = FastAPI()
 
 
 @app.get("/ping")
 def ping():
+    """ A test endpoint that returns a test response """
     return {"message": "pong"}
 
 
 @app.post("/generate-short-executive-summary")
-def generate_short_executive_summary(text_input: str = Body()):
+def generate_short_executive_summary(text_input: TextInput):
+    """ A main endpoint that prepares the input text for OpenAPI API call to generate the final summary """
     try:
         final_text_input = f"Write an executive summary with no more than two " \
                            f"paragraphs using such template with placeholders as example:\n " \
