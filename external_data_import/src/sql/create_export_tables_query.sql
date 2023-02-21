@@ -6,6 +6,16 @@ create sequence if not exists capabilities_id_seq
 create sequence if not exists nations_id_seq
     as integer;
 
+-- ndpp_capabilities table
+create table ndpp_capabilities
+(
+    id               serial
+        primary key,
+    code             varchar(30)  not null,
+    description      varchar(255) not null,
+    operational_area varchar(100) not null
+);
+
 -- capability_operational_domains table
 create table if not exists capability_operational_domains
 (

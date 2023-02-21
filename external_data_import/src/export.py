@@ -80,7 +80,7 @@ def main():
                 cursor.execute(TEMPLATED_COUNT_QUERY.format(table=table))
                 dst_cnt, = cursor.fetchone()
 
-            assert src_cnt == dst_cnt, f'Different count error: {src_cnt} in src vs {dst_conn} in dst'
+            assert src_cnt == dst_cnt, f'Different count error: {src_cnt} in src vs {dst_cnt} in dst'
 
             end = time.perf_counter()
             logger.info(f'Copying "{table}" table finished in {end - start:.04f} seconds')
