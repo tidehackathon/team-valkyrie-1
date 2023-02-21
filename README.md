@@ -79,6 +79,24 @@ And use this command to start thr docker container running:
 docker run --rm --env-file .env -p 8000:8000 executive-summary-generator-api
 ```
 
+
+## metabase module
+
+At the moment, the board contains two implemented metrics, files with SQL code for which are located in the following directories:
+
+```
+dashboard
+  └── queries
+      ├── Cross-Nation Interpretability Index 2021.sql
+      ├── Cross-Nation Interpretability Index 2022.sql
+      ├── Cross-Nation Interpretability Index Diff.sql
+      ├── Multi-Domain Capability Rate 2021.sql
+      ├── Multi-Domain Capability Rate 2022.sql
+      └── Multi-Domain Capability Rate Diff.sql
+```
+
+All these metrics are on the [board](https://metabase.valkyrie.org.ua/dashboard/9-kpis-dashboard), a screenshot of the visualization is below:
+
 ___
 
 # DAY 1
