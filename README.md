@@ -2,7 +2,14 @@
 
 Valkyrie-1
 
+# DAY 2
+
+___
+
+# DAY 1
+
 ## High-level project structure
+
 
 The project consists of three separate modules:
 
