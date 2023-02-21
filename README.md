@@ -111,4 +111,5 @@ python external_data_import/run.py
 ![infrastructure-architecture](https://user-images.githubusercontent.com/16081910/220318950-c4c3e4d9-b02e-4353-8b3c-a0094b43bb65.png)
 
 ### Data warehouse model
+We decided to convert the proposed database to a datawarehouse with a Star schema (see blow on the screenshot). It will give more flexibility and benefits for data management in the future.
 ![warehouse-architecture](https://user-images.githubusercontent.com/16081910/220319534-641a020d-2d54-4536-9b15-8ee6f6ed2c41.png)
