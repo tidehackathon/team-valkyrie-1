@@ -1,4 +1,4 @@
-We are proud that CWIX, as a unique, original, concrete and pragmatic exercise,
+EXECUTIVE_SUMMARY_TEMPLATE = """We are proud that CWIX, as a unique, original, concrete and pragmatic exercise,
 has established itself as the largest NATO interoperability event of its kind.
 And, CWIX perfectly demonstrates that interoperability does not relate only to
 the technical aspects, or to say 'the hardware', but also on how to operate,
@@ -46,4 +46,4 @@ the limitations placed upon CWIX 2021 meant that technical testing was the focus
 participants. That said, the operational relevance of CWIX 2021 was illustrated
 during the eVIP event as it provided vignettes set within an operational storyline
 of (a NATO humanitarian crisis response) to highlight innovative capabilities
-tested by NATO and nations during CWIX 2021.
+tested by NATO and nations during CWIX 2021."""

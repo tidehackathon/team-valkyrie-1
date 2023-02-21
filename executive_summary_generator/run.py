@@ -3,6 +3,8 @@ import logging
 import openai
 from environs import Env
 
+from executive_summary_generator.constants import EXECUTIVE_SUMMARY_TEMPLATE
+
 env = Env()
 env.read_env()
 openai.api_key = env('OPENAI_API_KEY')
@@ -14,11 +16,10 @@ def get_short_executive_summary_from_openai_api(input_data_for_executive_summary
     :param input_data_for_executive_summary: (str)
     :return: a short executive summary report (str)
     """
-    with open('summary_template.txt', 'r') as file:
-        template_text = file.readlines()
 
     final_text_input = f"Write an executive summary with no more than two " \
-                       f"paragraphs using such template:\n {''.join(template_text)}\n\n" \
+                       f"paragraphs using such template with placeholders as example:\n " \
+                       f"{EXECUTIVE_SUMMARY_TEMPLATE}\n\n" \
                        f"And use such input data:" \
                        f"{input_data_for_executive_summary}"
     logging.debug(f"Final input text for Open API call: {final_text_input}")
