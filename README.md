@@ -97,6 +97,8 @@ dashboard
 
 All these metrics are on the [board](https://metabase.valkyrie.org.ua/dashboard/9-kpis-dashboard), a screenshot of the visualization is below:
 
+![MicrosoftTeams-image (4)](https://user-images.githubusercontent.com/93226646/220414148-94fdb767-7c59-4170-8dd0-4ed1e6b7ba79.png)
+
 ___
 
 # DAY 1
