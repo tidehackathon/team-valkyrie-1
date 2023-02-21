@@ -4,10 +4,10 @@ And, CWIX perfectly demonstrates that interoperability does not relate only to
 the technical aspects, or to say 'the hardware', but also on how to operate,
 including procedures, an even the doctrinal aspects.
 
-CWIX 2021 took place from <Date ranges>. At this year's event, nine nations took part
-from the Joint Force Training Centre (JFTC) in <Country Name>, <Country ISO code>,
+CWIX 2021 took place from (paste here date ranges). At this year's event, nine nations took part
+from the Joint Force Training Centre (JFTC) in (paste here country Name), (paster her country ISO code),
 and twenty nations from national sites. Over the three-week period, NATO and national
-participants improved interoperability between <Number of commands> deployable command and control capabilities.
+participants improved interoperability between (paste here number of commands) deployable command and control capabilities.
 More than 12,000 test cases were conducting over multiple networks from over 70 remote
 test sites that spanned 13 time zones from Hawaii (USA) to Ankara (TUR).
 
