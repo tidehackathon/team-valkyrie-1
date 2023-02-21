@@ -9,12 +9,12 @@ app = FastAPI()
 
 
 @app.get("/ping")
-async def ping():
+def ping():
     return {"message": "pong"}
 
 
 @app.post("/generate-short-executive-summary")
-async def generate_short_executive_summary(text_input: str = Body()):
+def generate_short_executive_summary(text_input: str = Body()):
     try:
         final_text_input = f"Write an executive summary with no more than two " \
                            f"paragraphs using such template with placeholders as example:\n " \
