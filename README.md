@@ -4,17 +4,24 @@ Valkyrie-1
 
 # DAY 2
 
+## Architecture overview
+
+### General architecture
+![MicrosoftTeams-image](https://user-images.githubusercontent.com/16081910/220406585-86534f8a-2fe4-4269-a4a7-c6c0220be03a.png)
+
 The project consists of three separate modules:
 
 ```
 ├── executive_summary_generator
+├── executive_summary_generator_api
 ├── external_data_import
 └── metabase
 ```
 
 Of which the following perform the corresponding functions:
 
-+ **executive_summary_generator** - a module with the script that uses executive summary templates and OpaenAI API that helps create a short executive summary;
++ **executive_summary_generator** - a module with the script that uses executive summary templates and OpenAI API that helps create a short executive summary;
++ **executive_summary_generator_api** - a module that uses FastAPI framework and has an POST endpoint. The idea is to have API endpoint that takes some input text data, prepares executive summary templates and calls OpenAI API. As result it returns a short executive summary;
 + **external_data_import** - data injection module;
 + **metabase** - ....
 
@@ -22,7 +29,8 @@ Of which the following perform the corresponding functions:
 
 ### Setup & run
 
-First, you need to create OpenAI API Key on the https://platform.openai.com/ and write it down in a `.env` file.
+First, you need to create OpenAI API Key on the https://platform.openai.com/ and write it down in a `.env` file in the root of `executive_summary_generator` directory.
+
 An example of filled file is below:
 
 ```bash
@@ -43,6 +51,31 @@ python executive_summary_generator/run.py
 
 If you want to run the module with your input data, just edit the 
 `example_input_data_for_summary` variable value in `run.py` file.
+
+
+## executive_summary_generator_api module
+
+### Setup & run
+
+First, you need to create OpenAI API Key on the https://platform.openai.com/ and write it down in a `.env` file in the root of `executive_summary_generator_api` directory.
+
+An example of filled file is below:
+
+```bash
+OPENAI_API_KEY=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
+```
+
+After creation of `.env` file, we recommend to run application using Docker. Use the following command to buid the image locally:
+
+```bash
+docker build . -t executive-summary-generator-api
+```
+
+And use this command to start thr docker container running:
+
+```bash
+docker run --rm --env-file .env -p 8000:8000 executive-summary-generator-api
+```
 
 ___
 
