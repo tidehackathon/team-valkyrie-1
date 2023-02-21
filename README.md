@@ -95,7 +95,7 @@ dashboard
       └── Multi-Domain Capability Rate Diff.sql
 ```
 
-All these metrics are on the [board](https://metabase.valkyrie.org.ua/dashboard/9-kpis-dashboard), a screenshot of the visualization is below:
+All these metrics are on the [board]([https://metabase.valkyrie.org.ua/dashboard/9-kpis-dashboard](http://metabase.valkyrie.org.ua/public/dashboard/47a3ce1b-752f-40ef-b40c-ba3fd6fc6fa7)), a screenshot of the visualization is below:
 
 ![MicrosoftTeams-image (4)](https://user-images.githubusercontent.com/93226646/220414148-94fdb767-7c59-4170-8dd0-4ed1e6b7ba79.png)
 
