@@ -12,8 +12,13 @@ The project consists of three separate modules:
 ├── executive_summary_generator_api
 ├── external_data_import
 ├── metabase
-└── national_pairing_recommendation
+├── national_pairing_recommendation
+└── presentations
 ```
+
+## presentations
+
+Contains PDF files with two presentations - one with general overview of all the work and the second one is architectural.
 
 ## national_pairing_recommendation
 
