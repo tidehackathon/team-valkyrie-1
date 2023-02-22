@@ -2,6 +2,10 @@
 
 Valkyrie-1
 
+# DAY 3
+
+___
+
 # DAY 2
 
 ## Architecture overview
