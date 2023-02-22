@@ -1,0 +1,2 @@
+COPY (SELECT * FROM {table})
+  TO STDOUT WITH DELIMITER ','
