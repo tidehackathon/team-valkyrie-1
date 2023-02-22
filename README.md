@@ -4,6 +4,10 @@ Valkyrie-1
 
 # DAY 3
 
+## executive_summary_generator_api module
+
+Rewritten the architecture for API and added one more endpoint that helps generating a short multidomain capability summary.
+
 ## airflow_infra module
 
 ### Setup & run
