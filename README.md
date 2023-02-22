@@ -39,6 +39,9 @@ So far, one DAG has been implemented for importing data from an external databas
 
 ![image_2023-02-22_15-14-15](https://user-images.githubusercontent.com/93226646/220654315-6082c2ea-4ddd-40d7-8d05-a627de671901.png)
 
+## BI Implementation Approach
+
+<img width="1180" alt="Screenshot 2023-02-22 at 16 04 45" src="https://user-images.githubusercontent.com/16081910/220662687-5e5bf068-892c-4f9c-ac83-ba78ae300802.png">
 
 ___
 
