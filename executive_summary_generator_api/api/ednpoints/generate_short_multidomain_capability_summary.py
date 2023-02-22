@@ -1,11 +1,14 @@
 import logging
 
-from executive_summary_generator_api.api.models import TextInput
-from executive_summary_generator_api.api.utils import get_response_from_open_api_summary_model
-from executive_summary_generator_api.service import app
+from fastapi import APIRouter
+
+from ..models import TextInput
+from ..utils import get_response_from_open_api_summary_model
+
+router = APIRouter()
 
 
-@app.post("/generate-short-multidomain-capability-summary")
+@router.post("/generate-short-multidomain-capability-summary")
 def generate_short_executive_summary(text_input: TextInput):
     """ A main endpoint that prepares the input text and calls OpenAPI API
     to generate a Multi-Domain Capability summary
