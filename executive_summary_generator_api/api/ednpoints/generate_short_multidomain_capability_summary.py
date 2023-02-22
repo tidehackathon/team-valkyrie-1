@@ -13,14 +13,15 @@ def generate_short_executive_summary(text_input: TextInput):
     """ A main endpoint that prepares the input text and calls OpenAPI API
     to generate a Multi-Domain Capability summary
 
-    Example of recommended text_input data:
-        nation_name; operational_domain_name; multidomain_rate_2021; multidomain_rate_2022
-        Nation 45,Air,100,83.3333333333333333
-        Nation 45,Land,100,100
-        Nation 45,Maritime,100,100
-        Nation 45,Cyberspace,100,100
-        Nation 45,Space,100,100
-        Nation 45,Other Support Services,80,100
+    Example of recommended body for this endpoint:
+
+        {
+            "text_input": "nation_name; operational_domain_name; multidomain_rate_2021; multidomain_rate_2022\n
+                           Nation 45,Air,100,83.\n3333333333333333\nNation 45,Land,100,100\n
+                           Nation 45,Maritime,100,100\nNation 45,Cyberspace,100,100\n
+                           Nation 45,Space,100,100\n
+                           Nation 45,Other Support Services,80,100"
+        }
 
     It should be like a CSV content.
     """
