@@ -7,7 +7,7 @@ create sequence if not exists nations_id_seq
     as integer;
 
 -- ndpp_capabilities table
-create table ndpp_capabilities
+create table if not exists ndpp_capabilities
 (
     id               serial
         primary key,
