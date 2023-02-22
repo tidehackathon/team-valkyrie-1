@@ -4,6 +4,17 @@ Valkyrie-1
 
 # DAY 3
 
+The project consists of three separate modules:
+
+```
+├── airflow_infra
+├── executive_summary_generator
+├── executive_summary_generator_api
+├── external_data_import
+├── metabase
+└── national_pairing_recommendation
+```
+
 ## national_pairing_recommendation
 
 ### Run
