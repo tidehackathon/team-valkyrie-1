@@ -4,6 +4,41 @@ Valkyrie-1
 
 # DAY 3
 
+## airflow_infra module
+
+### Setup & run
+
+First, you need to create and fill in a `.env` file with parameters for connecting to two databases.
+An example of filled file is below:
+
+```bash
+AIRFLOW_IMAGE_NAME=apache/airflow:2.3.0
+AIRFLOW_UID=50000
+
+SRC_DATABASE_NAME=src_db
+SRC_DATABASE_HOST=192.168.0.1
+SRC_DATABASE_PORT=5432
+SRC_DATABASE_USER=some_user
+SRC_DATABASE_PASS=just_password
+
+DST_DATABASE_NAME=dst_db
+DST_DATABASE_HOST=192.168.0.1
+DST_DATABASE_PORT=5432
+DST_DATABASE_USER=other_user
+DST_DATABASE_PASS=secret_password
+```
+
+Airflow is running in docker, so you need to run the following command to run:
+
+```bash
+docker-compose --env-file .env up
+```
+After that, you need to follow the link http://0.0.0.0:8080/ and login using `airflow` as login and password.
+
+So far, one DAG has been implemented for importing data from an external database into an internal one:
+
+
+
 ___
 
 # DAY 2
