@@ -4,6 +4,17 @@ Valkyrie-1
 
 # DAY 3
 
+## national_pairing_recommendation
+
+### Run
+
+To start generating recommendations, run the following:
+
+```bash
+cd national_pairing_recommendation
+python main.py
+```
+
 ## executive_summary_generator_api module
 
 Rewritten the architecture for API and added one more endpoint that helps generating a short multidomain capability summary.
