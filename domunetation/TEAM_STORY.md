@@ -56,12 +56,12 @@ lead us to it. You can see it on the picture below:
 
 ## KPIs
 
-### Cross-Nation Interpretability Index
+### Cross-Nation Interopretability Index
 
-The Cross-Nation Interpretability Index is a way to measure how well countries can work together when they do tests. 
+The Cross-Nation Interopretability Index is a way to measure how well countries can work together when they do tests. 
 It looks at how good the results are when one country makes the tests, and another country uses them. This can help 
 us determine how to improve testing and make it easier for countries to work together.
-<img width="763" alt="image" src="https://user-images.githubusercontent.com/16081910/221032675-cf656418-07b3-46dd-bd0a-0f9e837fdbb8.png">
+<img width="994" alt="image" src="https://user-images.githubusercontent.com/16081910/221034286-e9e67ea0-8030-49bc-a019-6bd3148f56c4.png">
 
 
 ### Multi-Domain Capability Coverage
@@ -79,7 +79,6 @@ CWIX events, identifying areas for improvement and maximizing available resource
 <img width="754" alt="image" src="https://user-images.githubusercontent.com/16081910/221033016-52e2c1ef-7617-46d4-9566-97a4dce450cb.png">
 
 
-
 ## Proposals for Future CWIX Events improvements
 
 ### Nation Page (Details)
@@ -90,7 +89,8 @@ viewable per-nation basis.
 
 ### Key Influencers Report
 
-The Key Influencers report provides insights on the Cross-Nation Interpretability Index, Multi-Domain Capability 
+The Key Influencers report provides insights on the Cross-Nation Intero
+pretability Index, Multi-Domain Capability 
 Coverage, and NDPP Capability Utilization Index, helping identify areas for improvement.
 <img width="636" alt="Screenshot 2023-02-23 at 12 17 14" src="https://user-images.githubusercontent.com/16081910/220891450-5a70ac82-770a-4ec4-844f-3b2bba09e70e.png">
 
