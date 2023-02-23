@@ -9,6 +9,7 @@ openai.api_key = env('OPENAI_API_KEY')
 def get_response_from_open_api_summary_model(text_input: str) -> str:
     """ Calls Summary model trough OpenAPI API to generate some summary """
     try:
+        # Call OpenAI with settings recommended by official OpenAI documentation
         response = openai.Completion.create(
             model="text-davinci-003",
             prompt=text_input,
