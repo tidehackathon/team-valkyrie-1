@@ -84,6 +84,26 @@ x-airflow-common:
       condition: service_healthy
 
 services:
+  executive_summary_generator_api:
+    build:
+      context: ../executive_summary_generator_api
+      dockerfile: ../executive_summary_generator_api/Dockerfile
+    command: uvicorn service:app --reload --host 0.0.0.0 --port 8000
+    ports:
+      - '8000:8000'
+    restart: always
+
+  dst_db:
+    image: postgres:13-alpine
+    environment:
+      POSTGRES_USER: ${DST_DATABASE_USER}
+      POSTGRES_PASSWORD: ${DST_DATABASE_PASS}
+    volumes:
+      - postgres-dst-db-volume:/var/lib/postgresql/data
+    ports:
+      - "54320:${DST_DATABASE_PORT}"
+    restart: always
+
   postgres:
     image: postgres:13
     environment:
@@ -282,3 +302,4 @@ services:
 
 volumes:
   postgres-db-volume:
+  postgres-dst-db-volume:
