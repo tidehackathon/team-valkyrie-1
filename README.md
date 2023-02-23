@@ -1,4 +1,4 @@
-# Valkyrie-1
+# VIBI (Valkyrie Interoperability Business Intelligence) by Valkyrie-1
 
 # Tool description
 
