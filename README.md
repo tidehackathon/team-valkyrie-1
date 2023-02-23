@@ -104,7 +104,6 @@ The project consists of such separate modules:
 ├── executive_summary_generator_api
 ├── external_data_import
 ├── metabase/dashboard/queries
-├── national_pairing_recommendation
 ├── powerbi
 └── presentations
 ```
@@ -117,6 +116,38 @@ A `documentation` directory with `TEAM_STORY.md` file which contains more deatai
 ## powerbi directory
 
 A directory with PowerBI files.
+
+## Setup & Run:
+
+First you need to create and fill in the `.env` file in the `airflow_infra` directory:
+
+```
+AIRFLOW_IMAGE_NAME=apache/airflow:2.3.0
+AIRFLOW_UID=50000
+
+SRC_DATABASE_NAME=iodashboard
+SRC_DATABASE_HOST=tidehackathon.postgres.database.azure.com
+SRC_DATABASE_PORT=5432
+SRC_DATABASE_USER=tidereader
+SRC_DATABASE_PASS=ioH@ck@thonReader2023!
+
+DST_DATABASE_NAME=iodashboard
+DST_DATABASE_HOST=dst_db
+DST_DATABASE_PORT=5432
+DST_DATABASE_USER=postgres
+DST_DATABASE_PASS=postgres
+```
+
+Also you need to create and fill another one `.env` file in `executive_summary_generator_api` as follows:
+
+```
+OPENAI_API_KEY=<YOUR_OPENAI_API_KEY>
+```
+
+```bash
+cd airflow_infra
+docker-compose --env-file .env up
+```
 
 ___
 
@@ -131,6 +162,7 @@ The project consists of such separate modules:
 ├── external_data_import
 ├── metabase
 ├── national_pairing_recommendation
+├── powerbi
 └── presentations
 ```
 
