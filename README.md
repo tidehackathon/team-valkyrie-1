@@ -1,6 +1,92 @@
-# team-valkyrie-1
+# Valkyrie-1
 
-Valkyrie-1
+# Tool description
+
+**VIBI (Valkyrie Interoperability Business Intelligence)** - is a data analytics and visualization system for 
+cross-nation testing events. The system architecture includes a data injection step from an external 
+source, data cleansing and validation using Great Expectations, and data transformation using DBT 
+open-source tool and Python. Transformed data is then stored in a Star schema architecture Data Warehouse. 
+Data visualization and analysis are performed using two tools: PowerBI for data mining and discovery, 
+and Metabase for business intelligence. The system also includes CI/CD, Orchestration, Monitoring, and 
+Security tools. The BI Implementation approach follows a specific methodology, and there are KPIs used to 
+measure the effectiveness of cross-nation testing, such as the Cross-Nation Interpretability Index, 
+Multi-Domain Capability Coverage, and NDPP Capability Utilization Index. The system also proposes future 
+improvements, including a Nation Page (Details) report, a Key Influencers report, a Test Standards Improvement 
+Report, a Failed Test Cases Analysis Report, and a Nation Pairing Recommendation Report.
+
+# High level architecture
+
+The system architecture consists of several components that work together to process and analyze data from 
+external sources, visualize it, and provide insights through various KPIs and reports.
+
+At the core of the architecture is a data injection step that brings in data from an external database. The 
+data is then cleansed and validated using the Great Expectations tool, and transformed using the DBT 
+open-source tool and Python.
+
+The transformed data is then moved to a data warehouse that is designed using a Star schema architecture, 
+which is optimized for querying and performance. Two visualization tools, PowerBI and Metabase, are used 
+for data mining, discovery, and business intelligence.
+
+To manage the system, several other components are included, such as CI/CD, orchestration, monitoring, and 
+security tools. Jenkins is used for CI/CD, Airflow for orchestration, Grafana for monitoring, and pgAdmin 
+for security. The architecture is designed to support three different environments - DEV, TEST, and PROD.
+
+The KPIs are used to measure the effectiveness of the testing process and provide insights on how different 
+countries can work together. The three KPIs are the Cross-Nation Interpretability Index, Multi-Domain Capability 
+Coverage, and the NDPP Capability Utilization Index. Reports, such as the Nation Page (Details), Key 
+Influencers Report, Test Standards Improvement Report, Failed Test Cases Analysis Report, and Nation 
+Pairing Recommendation Report, are also included to provide further insights and recommendations for improvement.
+
+Overall, the architecture is designed to be flexible, scalable, and efficient, with the ability to handle 
+large amounts of data and provide meaningful insights to improve testing processes.
+
+# Used technologies and tools
+
+- **Python** is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability 
+with the use of significant indentation;
+- **PostgreSQL** also known as Postgres, is a free and open-source relational database management system (RDBMS) 
+emphasizing extensibility and SQL compliance. It was originally named POSTGRES, referring to its origins as 
+a successor to the Ingres database developed at the University of California, Berkeley;
+- **Data Analysis Expressions (DAX)** is the native formula and query language for Microsoft PowerPivot, Power BI 
+Desktop and SQL Server Analysis Services (SSAS) Tabular models. DAX includes some of the functions that are 
+used in Excel formulas with additional functions that are designed to work with relational data and perform 
+dynamic aggregation. It is, in part, an evolution of the Multidimensional Expression (MDX) language developed 
+by Microsoft for Analysis Services multidimensional models (often called cubes) combined with Excel formula 
+functions. It is designed to be simple and easy to learn, while exposing the power and flexibility of PowerPivot 
+and SSAS tabular models;
+- **Great Expectations** is the leading tool for validating, documenting, and profiling your data to maintain 
+quality and improve communication between teams. Head over to our getting started tutorial;
+- **dbt** is an open-source command line tool that helps analysts and engineers transform data in their warehouse 
+more effectively. It started at RJMetrics in 2016 as a solution to add basic transformation capabilities to 
+Stitch (acquired by Talend in 2018). The earliest versions of dbt allowed analysts to contribute to the data 
+transformation process following the best practices of software engineering;
+- **Metabase** is an open-source business intelligence platform. You can use Metabase to ask questions about 
+your data, or embed Metabase in your app to let your customers explore their data on their own;
+- **Power BI** is an interactive data visualization software product developed by Microsoft with a primary 
+focus on business intelligence. It is part of the Microsoft Power Platform. Power BI is a collection of 
+software services, apps, and connectors that work together to turn unrelated sources of data into coherent, 
+visually immersive, and interactive insights. Data may be input by reading directly from a database, webpage, 
+or structured files such as spreadsheets, CSV, XML, and JSON;
+- **ChatGPT (Chat Generative Pre-trained Transformer)** is a chatbot developed by OpenAI and launched in 
+November 2022. It is built on top of OpenAI's GPT-3 family of large language models and has been fine-tuned 
+(an approach to transfer learning) using both supervised and reinforcement learning techniques;
+- **Apache Airflow** is an open-source workflow management platform for data engineering pipelines. It started 
+at Airbnb in October 2014 as a solution to manage the company's increasingly complex workflows. Creating 
+Airflow allowed Airbnb to programmatically author and schedule their workflows and monitor them via the 
+built-in Airflow user interface. From the beginning, the project was made open source, becoming an 
+Apache Incubator project in March 2016 and a top-level Apache Software Foundation project in January 2019;
+- **Grafana** is a multi-platform open source analytics and interactive visualization web application. It provides 
+charts, graphs, and alerts for the web when connected to supported data sources. There is also a licensed 
+Grafana Enterprise version with additional capabilities available as a self-hosted installation or an account 
+on the Grafana Labs cloud service. It is expandable through a plug-in system. End users can create 
+complex monitoring dashboards using interactive query builders. Grafana is divided into a front end 
+and back end, written in TypeScript and Go, respectively;
+- **Jenkins** is a platform for creating a Continuous Integration/Continuous Delivery (CI/CD) environment. The 
+system offers many tools, languages, and automation tasks to aid in pipeline creation when developing 
+and deploying programs;
+- **pgAdmin** is the most popular and feature rich Open Source administration and development platform for 
+PostgreSQL, the most advanced Open Source database in the world. pgAdmin may be used on Linux, Unix, 
+macOS and Windows to manage PostgreSQL and EDB Advanced Server 10 and above.
 
 # DAY 4
 
