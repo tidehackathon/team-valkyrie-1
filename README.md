@@ -200,7 +200,7 @@ ___
 
 ## Architecture overview
 
-### General architecture
+### Updated general architecture
 ![MicrosoftTeams-image](https://user-images.githubusercontent.com/16081910/220406585-86534f8a-2fe4-4269-a4a7-c6c0220be03a.png)
 
 The project consists of such separate modules:
