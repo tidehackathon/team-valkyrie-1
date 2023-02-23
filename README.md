@@ -194,7 +194,7 @@ Rewritten the architecture for API and added one more endpoint that helps genera
 First, you need to create and fill in a `.env` file with parameters for connecting to two databases.
 An example of filled file is below:
 
-```bash
+```
 AIRFLOW_IMAGE_NAME=apache/airflow:2.3.0
 AIRFLOW_UID=50000
 
@@ -261,7 +261,7 @@ First, you need to create OpenAI API Key on the https://platform.openai.com/ and
 
 An example of filled file is below:
 
-```bash
+```
 OPENAI_API_KEY=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
 ```
 
@@ -289,7 +289,7 @@ First, you need to create OpenAI API Key on the https://platform.openai.com/ and
 
 An example of filled file is below:
 
-```bash
+```
 OPENAI_API_KEY=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
 ```
 
@@ -353,7 +353,7 @@ Of which the following perform the corresponding functions:
 First, you need to create and fill in a `.env` file with parameters for connecting to two databases.
 An example of filled file is below:
 
-```bash
+```
 SRC_DATABASE_NAME=src_db
 SRC_DATABASE_HOST=192.168.0.1
 SRC_DATABASE_PORT=5432
