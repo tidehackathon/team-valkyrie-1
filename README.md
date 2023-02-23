@@ -90,7 +90,7 @@ macOS and Windows to manage PostgreSQL and EDB Advanced Server 10 and above.
 
 # DAY 4
 
-The project consists of three separate modules:
+The project consists of such separate modules:
 
 ```
 ├── airflow_infra
@@ -117,7 +117,7 @@ ___
 
 # DAY 3
 
-The project consists of three separate modules:
+The project consists of such separate modules:
 
 ```
 ├── airflow_infra
@@ -198,7 +198,7 @@ ___
 ### General architecture
 ![MicrosoftTeams-image](https://user-images.githubusercontent.com/16081910/220406585-86534f8a-2fe4-4269-a4a7-c6c0220be03a.png)
 
-The project consists of three separate modules:
+The project consists of such separate modules:
 
 ```
 ├── airflow_infra
