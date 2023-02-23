@@ -35,7 +35,7 @@ cd national_pairing_recommendation
 python main.py
 ```
 
-Additionally, national_pairing_recommendation directory has another jupyter_notebooks one. It consists of Jupyter Notebooks with calculations for national pairing recommendation algorithms, inculding input data.
+Additionally, `national_pairing_recommendation` directory has another `jupyter_notebooks` one. It consists of Jupyter Notebooks with calculations for national pairing recommendation algorithms, inculding input data.
 
 ## executive_summary_generator_api module
 
