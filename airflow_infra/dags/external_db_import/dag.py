@@ -5,7 +5,6 @@ from airflow.operators.empty import EmptyOperator
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 
 from external_db_import.config import (
-    DAG_ID,
     DST_DB_CONNECTION,
     DST_DB_SCHEMA,
     IMPORT_TABLES,
@@ -20,7 +19,7 @@ from external_db_import.sql import (
 )
 
 with DAG(
-        dag_id=DAG_ID,
+        dag_id='external_db_import',
         start_date=datetime(2020, 1, 1),
         catchup=False,
 ) as dag:

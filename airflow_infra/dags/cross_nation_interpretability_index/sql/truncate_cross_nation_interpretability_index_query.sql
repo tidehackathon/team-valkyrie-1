@@ -1,0 +1,1 @@
+TRUNCATE cross_nation_interpretability_index;

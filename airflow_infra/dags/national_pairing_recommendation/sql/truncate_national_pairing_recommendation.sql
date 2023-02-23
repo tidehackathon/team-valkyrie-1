@@ -1,0 +1,1 @@
+TRUNCATE national_pairing_recommendation;

@@ -5,7 +5,7 @@ from airflow.models import Connection
 
 session = settings.Session()
 
-DAG_ID = 'external_db_import'
+DAG_ID = 'fill_cross_nation_interpretability_index'
 
 # External database
 SRC_DB_CONNECTION = 'src_postgres_db'
@@ -42,24 +42,3 @@ conn = Connection(
 if not session.query(Connection).filter_by(conn_id=DST_DB_CONNECTION).first():
     session.add(conn)
     session.commit()
-
-IMPORT_TABLES = (
-    'ndpp_capabilities',
-    'warfare_levels',
-    'capability_operational_domains',
-    'capability_tasks',
-    'capability_warfarelevels',
-    'focus_areas',
-    'objectives',
-    'nations',
-    'capabilities',
-    'operational_domains',
-    'standards',
-    'tasks',
-    'testcases',
-    'test_objectives',
-    'test_participants',
-    'issue_categories',
-    'testcase_issue_categories',
-    'testcase_standards',
-)
