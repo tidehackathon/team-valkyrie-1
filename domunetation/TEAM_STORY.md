@@ -11,6 +11,8 @@ Ukraine. Our mission is to create software tools that will help the Ukrainian ar
 effectively. We are passionate about using our skills to make a positive impact in our country and 
 will continue to work tirelessly to achieve our goals.
 
+We decided to call our tool as **VIBI**. VIBI stands for Valkyrie Interoperability Business Intelligence.
+
 ## Architecture overview
 
 The fist and main thing we started working on is the architecture for our system.
