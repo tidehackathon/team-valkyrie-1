@@ -90,6 +90,11 @@ macOS and Windows to manage PostgreSQL and EDB Advanced Server 10 and above.
 
 # DAY 4
 
+## Architecture overview
+
+### Updated general architecture
+<img width="1174" alt="Screenshot 2023-02-23 at 12 13 09" src="https://user-images.githubusercontent.com/16081910/220900267-b47313ff-762e-4281-96a9-81f5d99f1b86.png">
+
 The project consists of such separate modules:
 
 ```
@@ -104,12 +109,12 @@ The project consists of such separate modules:
 └── presentations
 ```
 
-## documentation
+## documentation directory
 
-A `documentation` directory with TEAM_STORY.md file which contains more deatails about team story.
+A `documentation` directory with `TEAM_STORY.md` file which contains more deatails about team story.
 
 
-## powerbi
+## powerbi directory
 
 A directory with PowerBI files.
 
@@ -129,11 +134,11 @@ The project consists of such separate modules:
 └── presentations
 ```
 
-## presentations
+## presentations directory
 
 Contains PDF files with two presentations - one with general overview of all the work and the second one is architectural.
 
-## national_pairing_recommendation
+## national_pairing_recommendation module
 
 ### Run
 
