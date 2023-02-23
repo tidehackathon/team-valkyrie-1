@@ -60,22 +60,22 @@ lead us to it. You can see it on the picture below:
 The Cross-Nation Interpretability Index is a way to measure how well countries can work together when they do tests. 
 It looks at how good the results are when one country makes the tests, and another country uses them. This can help 
 us determine how to improve testing and make it easier for countries to work together.
-<img width="752" alt="Screenshot 2023-02-23 at 12 15 39" src="https://user-images.githubusercontent.com/16081910/220891179-a8807fb4-372f-4726-8280-c3fe1f3e4264.png">
+<img width="1168" alt="Screenshot 2023-02-23 at 13 46 16" src="https://user-images.githubusercontent.com/16081910/220910595-8c16f98a-51d8-4fd9-bd25-57f4c55c8dc4.png">
+
 
 ### Multi-Domain Capability Coverage
 
 Capability Multi-Domain Coverage is a metric that shows the percentage of testing in which capabilities are used 
 in multiple operational domains. It helps to assess the ability of different countries to work together in diverse 
 situations and identify areas for improvement.
+<img width="1166" alt="Screenshot 2023-02-23 at 13 48 12" src="https://user-images.githubusercontent.com/16081910/220910935-97f8903b-23b4-4d8f-b7c4-6a1e40d66ca5.png">
 
-<img width="726" alt="Screenshot 2023-02-23 at 12 16 07" src="https://user-images.githubusercontent.com/16081910/220891251-c5cf93dd-6098-4112-80ce-aa296e65abdc.png">
 
 ### NDPP Capability Utilization Index
 
 The NDPP Capability Utilization Index measures how effectively nations use NATO-recommended capabilities during 
 CWIX events, identifying areas for improvement and maximizing available resources.
-<img width="752" alt="Screenshot 2023-02-23 at 12 16 33" src="https://user-images.githubusercontent.com/16081910/220891385-c4a2b3eb-9d2a-479c-9976-8ed9af9e1154.png">
-
+<img width="1167" alt="Screenshot 2023-02-23 at 13 48 52" src="https://user-images.githubusercontent.com/16081910/220911101-aab1c3f7-3910-497d-a79d-be320b572ec4.png">
 
 ## Proposals for Future CWIX Events improvements
 
@@ -105,3 +105,5 @@ which cases should be reconsidered or recreated to improve overall testing effec
 
 The Nation Pairing Recommendation Report suggests which countries should conduct testing together for better 
 coverage and efficiency while avoiding repeated testing.
+<img width="1166" alt="Screenshot 2023-02-23 at 13 49 38" src="https://user-images.githubusercontent.com/16081910/220911302-ea61a15c-bb64-4610-be89-dc1c9fb5182d.png">
+
