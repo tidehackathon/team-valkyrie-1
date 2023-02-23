@@ -51,7 +51,8 @@ Data Warehouse. It will give us a boost in querying, aggregation and performance
 
 We had started adapting to conditions we are in to reach the success. We have found the approach which will 
 lead us to it. You can see it on the picture below:
-<img width="1168" alt="Screenshot 2023-02-23 at 12 15 09" src="https://user-images.githubusercontent.com/16081910/220891084-ed3909db-4fdf-4e07-8e5c-c3f4ed4bb3ff.png">
+<img width="1176" alt="Screenshot 2023-02-23 at 22 13 03" src="https://user-images.githubusercontent.com/16081910/221032429-4247a943-cf73-4516-ac1d-c261dcbd238c.png">
+
 
 ## KPIs
 
@@ -60,21 +61,23 @@ lead us to it. You can see it on the picture below:
 The Cross-Nation Interpretability Index is a way to measure how well countries can work together when they do tests. 
 It looks at how good the results are when one country makes the tests, and another country uses them. This can help 
 us determine how to improve testing and make it easier for countries to work together.
-<img width="752" alt="Screenshot 2023-02-23 at 12 15 39" src="https://user-images.githubusercontent.com/16081910/220891179-a8807fb4-372f-4726-8280-c3fe1f3e4264.png">
+<img width="763" alt="image" src="https://user-images.githubusercontent.com/16081910/221032675-cf656418-07b3-46dd-bd0a-0f9e837fdbb8.png">
+
 
 ### Multi-Domain Capability Coverage
 
 Capability Multi-Domain Coverage is a metric that shows the percentage of testing in which capabilities are used 
 in multiple operational domains. It helps to assess the ability of different countries to work together in diverse 
 situations and identify areas for improvement.
+<img width="757" alt="Screenshot 2023-02-23 at 22 20 13" src="https://user-images.githubusercontent.com/16081910/221032926-72eb8bb7-6b7c-4b73-a54e-cf78e19bdee2.png">
 
-<img width="726" alt="Screenshot 2023-02-23 at 12 16 07" src="https://user-images.githubusercontent.com/16081910/220891251-c5cf93dd-6098-4112-80ce-aa296e65abdc.png">
 
 ### NDPP Capability Utilization Index
 
 The NDPP Capability Utilization Index measures how effectively nations use NATO-recommended capabilities during 
 CWIX events, identifying areas for improvement and maximizing available resources.
-<img width="752" alt="Screenshot 2023-02-23 at 12 16 33" src="https://user-images.githubusercontent.com/16081910/220891385-c4a2b3eb-9d2a-479c-9976-8ed9af9e1154.png">
+<img width="754" alt="image" src="https://user-images.githubusercontent.com/16081910/221033016-52e2c1ef-7617-46d4-9566-97a4dce450cb.png">
+
 
 
 ## Proposals for Future CWIX Events improvements
@@ -105,3 +108,5 @@ which cases should be reconsidered or recreated to improve overall testing effec
 
 The Nation Pairing Recommendation Report suggests which countries should conduct testing together for better 
 coverage and efficiency while avoiding repeated testing.
+<img width="753" alt="image" src="https://user-images.githubusercontent.com/16081910/221033113-9033dab9-03e9-48c7-a61a-93eb4d7a6406.png">
+
