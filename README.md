@@ -2,6 +2,10 @@
 
 Valkyrie-1
 
+# DAY 4
+
+___
+
 # DAY 3
 
 The project consists of three separate modules:
@@ -30,6 +34,8 @@ To start generating recommendations, run the following:
 cd national_pairing_recommendation
 python main.py
 ```
+
+Additionally, national_pairing_recommendation directory has another jupyter_notebooks one. It consists of Jupyter Notebooks with calculations for national pairing recommendation algorithms, inculding input data.
 
 ## executive_summary_generator_api module
 
