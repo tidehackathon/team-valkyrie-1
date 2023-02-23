@@ -153,7 +153,38 @@ Additionally, `national_pairing_recommendation` directory has another `jupyter_n
 
 ## executive_summary_generator_api module
 
-Rewritten the architecture for API and added one more endpoint that helps generating a short multidomain capability summary.
+Rewritten the architecture for API and added one more endpoint that helps to generate a short multidomain capability summary.
+
+Example input of `/generate-short-multidomain-capability-summary` endpoint:
+```bash
+curl --location --request POST 'http://0.0.0.0:8000/generate-short-multidomain-capability-summary' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "text_input": "multidomain_rate_2021;multidomain_rate_2022;operational_domain_name\n98.97959184;92.53731343;Maritime\n96.875;90.90909091;Space\n95.45454545;95.16129032;Air\n91.34615385;91.33333333;Land\n90.47619048;94.83870968;Other Support Services\n90.35087719;91.55844156;Cyberspace"
+}'
+```
+And example of output:
+```bash
+{
+    "message": "The Multi-Domain Capability Rate metric improved in Other Support Services and Cyberspace domains and slightly decreased in other domains. Overall, the rates remain relatively high, indicating that different countries can generally work together effectively across different domains."
+}
+```
+
+Example input of `/generate-short-executive-summary` endpoint:
+```bash
+curl --location --request POST 'http://0.0.0.0:8000/generate-short-executive-summary' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "text_input": "Ukraine participated in CWIX 2021 with 2 capability configuration(s) provided by 1 organization(s). National capabilities where deployed in 1 location(s), connected to 2 network(s) and got involved in 2 focus area(s), to assess interoperability with capabilities from 13 nation(s).\n\n Participating Military Organizations:\n\nArmed Forces of Ukraine (2).\n\n Non-military organizations and Industry:\n\n Focus Areas:\n\nMultilateral Interoperability Programme (1); Cyber Defence (1).\n\n Test Partners: Bulgaria; Canada; Denmark; Estonia; France; Germany; Hungary; NATO; Netherlands;  Poland; Portugal; Romania; Spain.\n\nCWIX Tasks:\n\nSystem Testing (1); Cyber Defence (1).\n\n Capability Maturity:\n\nDevelopmental (1); Experimental (1).\n\n Deployment Sites:\n\n Home or Office, Internet (NATO) (2).\n\nNetworks:\n\n Cyber (1); MIP VPN (1)."
+}'
+```
+And example of output:
+```bash
+{
+    "message": "\n\nCWIX 2021 took place from (paste here date ranges). At this year's event, Ukraine took part with two capability configurations provided by the Armed Forces of Ukraine, deployed in one location and connected to two networks. The two focus areas were Multilateral Interoperability Programme and Cyber Defence, and 13 nations participated in the event. The CWIX Tasks were System Testing and Cyber Defence, with capabilities at the developmental and experimental maturity levels. The deployment sites were Home or Office and Internet (NATO) and the networks used were Cyber and MIP VPN. This event was a first opportunity to execute a 'hybrid' CWIX Execution event and provided much food-for-thought for how future WIX events should be delivered."
+}
+```
+
 
 ## airflow_infra module
 
@@ -248,6 +279,35 @@ python executive_summary_generator/run.py
 If you want to run the module with your input data, just edit the 
 `example_input_data_for_summary` variable value in `run.py` file.
 
+Example of script input:
+```python
+# Give some context and metrics as text for input
+example_input_data_for_summary = "\n\nUkraine participated in " \
+         "CWIX 2021 with 2 capability configuration(s) provided by 1 organization(s). " \
+         "National capabilities where deployed in 1 location(s), connected to 2 " \
+         "network(s) and got involved in 2 focus area(s), to assess interoperability " \
+         "with capabilities from 13 nation(s).\n\n" \
+         "Participating Military Organizations:\n\nArmed Forces of Ukraine (2).\n\n" \
+         "Non-military organizations and Industry:\n\n" \
+         "Focus Areas:\n\nMultilateral Interoperability Programme (1); Cyber Defence (1).\n\n" \
+         "Test Partners: Bulgaria; Canada; Denmark; Estonia; France; Germany; Hungary; NATO; Netherlands; " \
+         "Poland; Portugal; Romania; Spain.\n\nCWIX Tasks:\n\nSystem Testing (1); Cyber Defence (1).\n\n" \
+         "Capability Maturity:\n\nDevelopmental (1); Experimental (1).\n\n" \
+         "Deployment Sites:\n\n Home or Office, Internet (NATO) (2).\n\nNetworks:\n\n" \
+         "Cyber (1); MIP VPN (1)."
+# And call the function below to get a short executive summary
+res = get_short_executive_summary_from_openai_api(example_input_data_for_summary)
+```
+
+And output:
+```bash
+Final ChatGPT response:
+
+
+CWIX 2021 took place from (April 19th to May 7th). At this year`s event, nine nations took part from the Joint Force Training Centre (JFTC) in Bydgoszcz (PL), and twenty nations from national sites. Over the three-week period, Ukraine and national participants improved interoperability between two deployable command and control capabilities. Ukraine was able to assess interoperability with capabilities from thirteen nations and more than 12,000 test cases were conducted over multiple networks from over 70 remote test sites that spanned 13 time zones from Hawaii (USA) to Ankara (TUR). CWIX 2021 was a successful event and Ukraine`s participation was instrumental in demonstrating the importance of interoperability.
+
+```
+
 
 ## executive_summary_generator_api module
 
@@ -271,6 +331,21 @@ And use this command to start thr docker container running:
 
 ```bash
 docker run --rm --env-file .env -p 8000:8000 executive-summary-generator-api
+```
+
+Example input of `/generate-short-executive-summary` endpoint:
+```bash
+curl --location --request POST 'http://0.0.0.0:8000/generate-short-executive-summary' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "text_input": "Ukraine participated in CWIX 2021 with 2 capability configuration(s) provided by 1 organization(s). National capabilities where deployed in 1 location(s), connected to 2 network(s) and got involved in 2 focus area(s), to assess interoperability with capabilities from 13 nation(s).\n\n Participating Military Organizations:\n\nArmed Forces of Ukraine (2).\n\n Non-military organizations and Industry:\n\n Focus Areas:\n\nMultilateral Interoperability Programme (1); Cyber Defence (1).\n\n Test Partners: Bulgaria; Canada; Denmark; Estonia; France; Germany; Hungary; NATO; Netherlands;  Poland; Portugal; Romania; Spain.\n\nCWIX Tasks:\n\nSystem Testing (1); Cyber Defence (1).\n\n Capability Maturity:\n\nDevelopmental (1); Experimental (1).\n\n Deployment Sites:\n\n Home or Office, Internet (NATO) (2).\n\nNetworks:\n\n Cyber (1); MIP VPN (1)."
+}'
+```
+And example of output:
+```bash
+{
+    "message": "\n\nCWIX 2021 took place from (paste here date ranges). At this year's event, Ukraine took part with two capability configurations provided by the Armed Forces of Ukraine, deployed in one location and connected to two networks. The two focus areas were Multilateral Interoperability Programme and Cyber Defence, and 13 nations participated in the event. The CWIX Tasks were System Testing and Cyber Defence, with capabilities at the developmental and experimental maturity levels. The deployment sites were Home or Office and Internet (NATO) and the networks used were Cyber and MIP VPN. This event was a first opportunity to execute a 'hybrid' CWIX Execution event and provided much food-for-thought for how future WIX events should be delivered."
+}
 ```
 
 
@@ -349,11 +424,12 @@ python external_data_import/run.py
 
 ## executive_summary_generator_api module
 
-...
+TDB
 
 ## metabase module
 
-...
+TDB
+
 ## Architecture overview
 
 ### General architecture

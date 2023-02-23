@@ -22,19 +22,6 @@ def get_short_executive_summary_from_openai_api(input_data_for_executive_summary
                        f"{EXECUTIVE_SUMMARY_TEMPLATE}\n\n" \
                        f"And use such input data:" \
                        f"{input_data_for_executive_summary}"
-    final_text_input = """
-Summarise in a few sentences if there some improvements or not for the data below. These data are for the Multi-Domain Capability Rate metric which shows how often different capabilities, like air or land, were used together during testing. This helps understand how well different countries can work together in different situations.
-
-Input data:
-nation_name; operational_domain_name; multidomain_rate_2021; multidomain_rate_2022
-Nation 45,Air,100,83.3333333333333333
-Nation 45,Land,100,100
-Nation 45,Maritime,100,100
-Nation 45,Cyberspace,100,100
-Nation 45,Space,100,100
-Nation 45,Other Support Services,80,100
-
-    """
     logging.debug(f"Final input text for Open API call: {final_text_input}")
     result = openai.Completion.create(
         model="text-davinci-003",
