@@ -90,10 +90,13 @@ macOS and Windows to manage PostgreSQL and EDB Advanced Server 10 and above.
 
 # DAY 4
 
-## Architecture overview
+## Updated Architecture overview
 
-### Updated general architecture
 <img width="1174" alt="Screenshot 2023-02-23 at 12 13 09" src="https://user-images.githubusercontent.com/16081910/220900267-b47313ff-762e-4281-96a9-81f5d99f1b86.png">
+
+## Updated BI Implementation Approach
+
+
 
 The project consists of such separate modules:
 
