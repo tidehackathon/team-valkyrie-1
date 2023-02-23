@@ -84,6 +84,11 @@ x-airflow-common:
       condition: service_healthy
 
 services:
+  metabase:
+    image: metabase/metabase:latest
+    ports:
+      - '3000:3000'
+
   executive_summary_generator_api:
     build:
       context: ../executive_summary_generator_api
