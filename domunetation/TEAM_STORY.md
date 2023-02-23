@@ -51,8 +51,7 @@ Data Warehouse. It will give us a boost in querying, aggregation and performance
 
 We had started adapting to conditions we are in to reach the success. We have found the approach which will 
 lead us to it. You can see it on the picture below:
-<img width="1176" alt="Screenshot 2023-02-23 at 22 13 03" src="https://user-images.githubusercontent.com/16081910/221032429-4247a943-cf73-4516-ac1d-c261dcbd238c.png">
-
+<img width="745" alt="image" src="https://user-images.githubusercontent.com/16081910/221043808-8098967d-50a7-46b9-9cd3-43f726a7103f.png">
 
 ## KPIs
 
@@ -99,15 +98,20 @@ Coverage, and NDPP Capability Utilization Index, helping identify areas for impr
 The Test Standards Improvement Report identifies which standards caused issues during testing and need improvement. 
 It helps to ensure that tests are more effective and efficient, leading to better overall results.
 
+<img width="1162" alt="image" src="https://user-images.githubusercontent.com/16081910/221044249-94542002-6434-4b3e-86c6-af2c02d95318.png">
+
+
 ### Failed Test Cases Analysis Report
 
 The Failed Test Cases Analysis Report evaluates test cases that have consistently failed over time, identifying 
 which cases should be reconsidered or recreated to improve overall testing effectiveness.
+
+<img width="1163" alt="image" src="https://user-images.githubusercontent.com/16081910/221043963-afe7facb-1999-44d1-9198-0acd7dc736e2.png">
 
 ### Nation Pairing Recommendation Report
 
 The Nation Pairing Recommendation Report suggests which countries should conduct testing together for better 
 coverage and efficiency while avoiding repeated testing.
 
-<img width="753" alt="image" src="https://user-images.githubusercontent.com/16081910/221033113-9033dab9-03e9-48c7-a61a-93eb4d7a6406.png">
+<img width="1162" alt="image" src="https://user-images.githubusercontent.com/16081910/221044412-bc1216a5-9dea-4381-b775-511e5f4b75d9.png">
 
