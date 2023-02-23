@@ -96,7 +96,7 @@ macOS and Windows to manage PostgreSQL and EDB Advanced Server 10 and above.
 
 ## Updated BI Implementation Approach
 
-
+<img width="1176" alt="Screenshot 2023-02-23 at 22 13 03" src="https://user-images.githubusercontent.com/16081910/221031777-8a08c0b3-9c42-405c-ae21-a1046fe4f525.png">
 
 The project consists of such separate modules:
 
