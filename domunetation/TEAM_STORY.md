@@ -108,5 +108,6 @@ which cases should be reconsidered or recreated to improve overall testing effec
 
 The Nation Pairing Recommendation Report suggests which countries should conduct testing together for better 
 coverage and efficiency while avoiding repeated testing.
+
 <img width="753" alt="image" src="https://user-images.githubusercontent.com/16081910/221033113-9033dab9-03e9-48c7-a61a-93eb4d7a6406.png">
 
