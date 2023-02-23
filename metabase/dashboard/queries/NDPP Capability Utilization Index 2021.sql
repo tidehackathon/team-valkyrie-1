@@ -1,11 +1,4 @@
-select nation_name,
-       SUM(CASE WHEN operational_domain_name = 'Air' THEN score END) as "Air",
-       SUM(CASE WHEN operational_domain_name = 'Land' THEN score END) as "Land",
-       SUM(CASE WHEN operational_domain_name = 'Maritime' THEN score END) as "Maritime",
-       SUM(CASE WHEN operational_domain_name = 'Cyberspace' THEN score END) as "Cyberspace",
-       SUM(CASE WHEN operational_domain_name = 'Space' THEN score END) as "Space",
-       SUM(CASE WHEN operational_domain_name = 'Other Support Services' THEN score END) as "Other Support Services"
-       from (with P as (select testcase_id
+with P as (select testcase_id
            from public.test_participants
            where participant_role = 'Provider'
            group by testcase_id
@@ -19,7 +12,8 @@ select nation_name,
    , C as (select distinct tp.capability_id
            from public.test_participants tp
                     join P p on p.testcase_id = tp.testcase_id
-           where tp.participant_role = 'Provider')
+           where tp.participant_role = 'Provider'
+             and tp.exercise_cycle = 'CWIX 2021')
    , NDPP as (select d.id
                    , d.name
                    , coalesce(c.ndpp_capability_count, 0) as ndpp_capability_count
@@ -50,9 +44,14 @@ select nation_name,
                   , cap.operational_domain_id
                   , cap.operational_domain_name
                   , cap.ndpp_capability_count)
-select nation_name
-     , operational_domain_name
-     , case when index > 100 then 100 else index end as score
-
-from D) AS _
-GROUP BY nation_name;
+   , B1 as (select nation_id
+                 , nation_name
+                 , operational_domain_id
+                 , operational_domain_name
+                 , case when index > 100 then 100 else index end as index
+            from D)
+   , B2 as (select nation_id, nation_name, sum(index) / 6.0 as index
+            from B1
+            group by nation_id, nation_name)
+select avg(index)
+from B2
