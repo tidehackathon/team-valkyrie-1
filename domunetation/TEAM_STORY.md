@@ -51,6 +51,7 @@ Data Warehouse. It will give us a boost in querying, aggregation and performance
 
 We had started adapting to conditions we are in to reach the success. We have found the approach which will 
 lead us to it. You can see it on the picture below:
+
 <img width="745" alt="image" src="https://user-images.githubusercontent.com/16081910/221043808-8098967d-50a7-46b9-9cd3-43f726a7103f.png">
 
 ## KPIs
