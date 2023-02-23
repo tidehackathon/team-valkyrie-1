@@ -14,8 +14,7 @@ will continue to work tirelessly to achieve our goals.
 ## Architecture overview
 
 The fist and main thing we started working on is the architecture for our system.
-
-[**place architecture screenshot here**]
+<img width="1174" alt="Screenshot 2023-02-23 at 12 13 09" src="https://user-images.githubusercontent.com/16081910/220890731-91b828fe-f534-40cc-bdae-4cf512190d51.png">
 
 **_NOTE:_**  Pay attention that there are background color differences in diagram components.
 The components with white background color are the ones that are already implemented. The grey background color
@@ -40,8 +39,7 @@ use pgAdmin to avoid direct connections to all our DBs;
 - To follow the best practises, we are going to have 3 type of environments - DEV, TEST and PROD.
 
 ## Data Warehouse overview
-
-[**place Data Warehouse screenshot here**]
+<img width="1175" alt="Screenshot 2023-02-23 at 12 14 03" src="https://user-images.githubusercontent.com/16081910/220890893-331d6901-cbc9-4485-bbf8-597c165e6899.png">
 
 We were given a DB with input data at the beginning of TIDE Hackathon. Our team has found that the provided DB has 
 schema which can be optimized - some tables had mixed entities. That's why we are using Star schema in our
@@ -51,8 +49,7 @@ Data Warehouse. It will give us a boost in querying, aggregation and performance
 
 We had started adapting to conditions we are in to reach the success. We have found the approach which will 
 lead us to it. You can see it on the picture below:
-
-[**place Data Warehouse screenshot here**]
+<img width="1168" alt="Screenshot 2023-02-23 at 12 15 09" src="https://user-images.githubusercontent.com/16081910/220891084-ed3909db-4fdf-4e07-8e5c-c3f4ed4bb3ff.png">
 
 ## KPIs
 
@@ -61,8 +58,7 @@ lead us to it. You can see it on the picture below:
 The Cross-Nation Interpretability Index is a way to measure how well countries can work together when they do tests. 
 It looks at how good the results are when one country makes the tests, and another country uses them. This can help 
 us determine how to improve testing and make it easier for countries to work together.
-
-[**place Cross-Nation Interpretability Index screenshot here**]
+<img width="752" alt="Screenshot 2023-02-23 at 12 15 39" src="https://user-images.githubusercontent.com/16081910/220891179-a8807fb4-372f-4726-8280-c3fe1f3e4264.png">
 
 ### Multi-Domain Capability Coverage
 
@@ -70,14 +66,14 @@ Capability Multi-Domain Coverage is a metric that shows the percentage of testin
 in multiple operational domains. It helps to assess the ability of different countries to work together in diverse 
 situations and identify areas for improvement.
 
-[**place Multi-Domain Capability Coverage screenshot here**]
+<img width="726" alt="Screenshot 2023-02-23 at 12 16 07" src="https://user-images.githubusercontent.com/16081910/220891251-c5cf93dd-6098-4112-80ce-aa296e65abdc.png">
 
 ### NDPP Capability Utilization Index
 
 The NDPP Capability Utilization Index measures how effectively nations use NATO-recommended capabilities during 
 CWIX events, identifying areas for improvement and maximizing available resources.
+<img width="752" alt="Screenshot 2023-02-23 at 12 16 33" src="https://user-images.githubusercontent.com/16081910/220891385-c4a2b3eb-9d2a-479c-9976-8ed9af9e1154.png">
 
-[**place NDPP Capability Utilization Index screenshot here**]
 
 ## Proposals for Future CWIX Events improvements
 
@@ -91,8 +87,7 @@ viewable per-nation basis.
 
 The Key Influencers report provides insights on the Cross-Nation Interpretability Index, Multi-Domain Capability 
 Coverage, and NDPP Capability Utilization Index, helping identify areas for improvement.
-
-[**place Key Influencers Report screenshot here**]
+<img width="636" alt="Screenshot 2023-02-23 at 12 17 14" src="https://user-images.githubusercontent.com/16081910/220891450-5a70ac82-770a-4ec4-844f-3b2bba09e70e.png">
 
 ### Test Standards Improvement Report
 
