@@ -90,6 +90,29 @@ macOS and Windows to manage PostgreSQL and EDB Advanced Server 10 and above.
 
 # DAY 4
 
+The project consists of three separate modules:
+
+```
+├── airflow_infra
+├── documentation
+├── executive_summary_generator
+├── executive_summary_generator_api
+├── external_data_import
+├── metabase/dashboard/queries
+├── national_pairing_recommendation
+├── powerbi
+└── presentations
+```
+
+## documentation
+
+A `documentation` directory with TEAM_STORY.md file which contains more deatails about team story.
+
+
+## powerbi
+
+A directory with PowerBI files.
+
 ___
 
 # DAY 3
